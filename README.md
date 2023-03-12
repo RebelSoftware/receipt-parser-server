@@ -1,5 +1,8 @@
 # ReceiptManager server
 
+This fork moves the config.yml file and the APIKey file into the data/config folder
+This is to make it easier to use a container
+
 All the needed info about how to "install | use | enjoy" `receipt-parser-server` is present [here](https://receipt-parser-server.readthedocs.io/en/master/).
 
 ---
@@ -18,5 +21,4 @@ All the needed info about how to "install | use | enjoy" `receipt-parser-server`
   - [Training API](https://receipt-parser-server.readthedocs.io/en/master/api.html#training-api)
 
 ### Questions
-If there any questions, bug or enhancements, please raise an issue or read my medium article about this. You can
-find the article [here](https://medium.com/swlh/fuzzy-receipt-parser-and-manager-cb614e4eaa6a).
+If there any questions, bug or enhancements, please raise an issue.
