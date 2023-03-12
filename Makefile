@@ -13,11 +13,11 @@ serve:
 
 PHONY: docker-build
 docker-build:
-	docker build -t monolidth/receipt-parser-server .
+	docker build -t RebelSoftware/receipt-parser-server .
 
 .PHONY: docker-push
 docker-push:
-	docker push monolidth/receipt-parser-server
+	docker push RebelSoftware/receipt-parser-server
 
 .PHONY: docker-run
 docker-run:
