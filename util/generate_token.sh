@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-API_PATH="${PWD}/data/.api_token"
+API_PATH="${PWD}/data/config/.api_token"
 
 print_fail() {
     echo -e "\t\033[31m API token is not valid or present\033[0m"
