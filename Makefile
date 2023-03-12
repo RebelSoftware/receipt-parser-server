@@ -9,6 +9,7 @@ generate_token:
 serve:
 	bash util/generate_certificate.sh
 	bash util/generate_token.sh
+	bash util/copy_config.sh
 	python src/receipt_server.py
 
 PHONY: docker-build
