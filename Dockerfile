@@ -12,6 +12,7 @@ RUN mkdir -p /app/data/img
 RUN mkdir -p /app/data/tmp
 RUN mkdir -p /app/data/training
 RUN mkdir -p /app/data/txt
+RUN mkdir -p /app/data/config
 
 RUN pip install -r requirements.txt
 CMD ["make", "serve"]
