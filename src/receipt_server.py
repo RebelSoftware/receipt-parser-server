@@ -32,7 +32,7 @@ TRAINING_FOLDER = 'data/training/'
 CERT_LOCATION = "cert/server.crt"
 KEY_LOCATION = "cert/server.key"
 DATA_PREFIX = "data/img/"
-API_TOKEN_FILE = "data/.api_token"
+API_TOKEN_FILE = ".api_token"
 
 # ZERO_CONF
 ZERO_CONF_DESCRIPTION = "Receipt parser server._receipt-service._tcp.local."
@@ -47,8 +47,8 @@ api_key_cookie = APIKeyCookie(name=API_KEY_NAME, auto_error=False)
 
 config = read_config(util.get_config_dir() + "/config.yml")
 
-if os.path.isfile(API_TOKEN_FILE):
-    with open(API_TOKEN_FILE) as f:
+if os.path.isfile(util.get_config_dir() + API_TOKEN_FILE):
+    with open(util.get_config_dir() + API_TOKEN_FILE) as f:
         line = f.readline().strip()
         if not line:
            raise RuntimeError("can't find valid API token")
