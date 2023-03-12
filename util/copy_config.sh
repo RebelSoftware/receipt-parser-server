@@ -1,3 +1,13 @@
+#!/usr/bin/env bash
+
+#check if the environment variable for the config location has been set
+#if not set it
+if [[ -z "${RECEIPT_PARSER_CONFIG_DIR}" ]]; then
+  export RECEIPT_PARSER_CONFIG_DIR="data/config"
+fi
+
+
+
 CONFIG_PATH="${PWD}/${RECEIPT_PARSER_CONFIG_DIR}/config.yml"
 
 print_fail() {
